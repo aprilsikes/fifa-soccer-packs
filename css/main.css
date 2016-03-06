@@ -7,6 +7,16 @@
   height: 279px;
 }
 
+.homeButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+#buttonLeft {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 em {
   color: white;
 }
@@ -17,6 +27,12 @@ img {
 }
 
 .col-md-4 {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  /*display: flex;*/
+
+}
+
+.col-md-3 {
+  margin-top: 40px;
+  /*display: flex;*/
 }

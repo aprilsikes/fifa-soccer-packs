@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>FIFA Soccer Packs</title>
+    <script type="text/javascript" src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -12,8 +13,11 @@
     <base href="/">
     <div class="jumbotron">
       <h1>FIFA Soccer  <small><em>Play Your Pack</em></small></h1>
-      <p><a class="btn btn-primary btn-md" href="/" role="button">Home</a></p>
-      <p><a class="btn btn-primary btn-md" href="/packs" role="button">Packs</a></p>
+      <br>
+      <div class='homeButtons'>
+        <p><a class="btn btn-primary btn-md" id='buttonLeft' href="/" role="button">Home</a></p>
+        <p><a class="btn btn-primary btn-md" href="/packs" role="button">Packs</a></p>
+      </div>
     </div>
 
     <div ng-view></div>
