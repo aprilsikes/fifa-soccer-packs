@@ -1,4 +1,22 @@
+.jumbotron {
+  background-image: url('http://static1.squarespace.com/static/54aae25ae4b0f4be675c15c6/t/56bb594260b5e9e52edb1bb3/1455118718760/soccer-ball-under-stadium-lights.jpg?format=1500w');
+  margin-bottom: 0;
+  color: white;
+  opacity: 0.8;
+  font-weight: bold;
+  height: 279px;
+}
+
+em {
+  color: white;
+}
+
 img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 125px;
+  max-height: 125px;
+}
+
+.col-md-4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

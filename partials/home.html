@@ -1,38 +1,14 @@
 <div class="row">
-  <div class="col-md-4">
-    <p>
-      <div ng-repeat="player in players">
-        <li>{{player.name}}</li>
-        <li><strong>Player Position:</strong>{{player.position}}</li>
-        <li><strong>Team:</strong>{{player.team}}</li>
-        <li><img ng-src='{{player.image_url}}'></li>
-        <li><strong>FIFA Rating:</strong>{{player.fifa_rating}}</li>
-        <hr>
-      </div>
-    </p>
-  </div>
-  <div class="col-md-4">
-    <p>
-      <div ng-repeat="player in players">
-        <li>{{player.name}}</li>
-        <li><strong>Player Position:</strong>{{player.position}}</li>
-        <li><strong>Team:</strong>{{player.team}}</li>
-        <li><img ng-src='{{player.image_url}}'></li>
-        <li><strong>FIFA Rating:</strong>{{player.fifa_rating}}</li>
-        <hr>
-      </div>
-    </p>
-  </div>
-  <div class="col-md-4">
-    <p>
-      <div ng-repeat="player in players">
-        <li>{{player.name}}</li>
-        <li><strong>Player Position:</strong>{{player.position}}</li>
-        <li><strong>Team:</strong>{{player.team}}</li>
-        <li><img ng-src='{{player.image_url}}'></li>
-        <li><strong>FIFA Rating:</strong>{{player.fifa_rating}}</li>
-        <hr>
-      </div>
-    </p>
+  <div class="col-md-4" ng-repeat="player in players">
+    <div class='well'>
+      <h3 class='name'><strong>{{player.name}}</strong></h3>
+      <img ng-src='{{player.image_url}}'>
+      <p><strong>Position: </strong>{{player.position}}</p>
+      <p><strong>Team: </strong>{{player.team}}</p>
+      <p><strong>FIFA Rating: </strong>{{player.fifa_rating}}</p>
+      <button class="btn btn-success" ng-click='addPlayer(player)'>Add To Pack</button>
+    </div>
   </div>
 </div>
+
+<!-- http://img.fifa.com/images/fwc/2014/players/prt-3/229397.png -->
