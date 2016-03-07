@@ -10,9 +10,12 @@ app.controller('PackController', ['$scope', '$http', 'PackService', function ($s
   }
 
   PackService.all().then(function (players) {
+    // console.log(players);
     $scope.players = players;
   })
   console.log($scope.players);
+
+  // $scope.players = PackService.all();
 
   // PackService.packValue().then(function (results) {
   //   $scope.packValue = results;

@@ -1,8 +1,8 @@
 app.factory('PackService', function ($http) {
   return {
     all: function() {
-      // return $http.get('http://localhost:3000/api/packs').then(function (players) {
-      return $http.get('https://shrouded-inlet-22118.herokuapp.com/', {method: "jsonp"}).then(function (players) {
+      return $http.get('http://localhost:3000/api/packs').then(function (players) {
+      // return $http.get('https://shrouded-inlet-22118.herokuapp.com/', {method: "jsonp"}).then(function (players) {
         console.log(players);
         console.log(players.data);
         var array2 = players.data;
