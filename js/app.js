@@ -2,11 +2,11 @@ var app = angular.module('april', ['ngRoute', 'ngResource']);
 
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider
-      .when('/', {
+      .when('/api', {
         templateUrl: 'partials/home.html',
         controller: 'MainController'
       })
-      .when('/packs', {
+      .when('/api/packs', {
         templateUrl: 'partials/packs.html',
         controller: 'PackController'
       })
