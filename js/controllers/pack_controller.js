@@ -13,4 +13,9 @@ app.controller('PackController', ['$scope', '$http', 'PackService', function ($s
     $scope.players = players;
   })
   console.log($scope.players);
+
+  // PackService.packValue().then(function (results) {
+  //   $scope.packValue = results;
+  // })
+  // console.log($scope.packValue);
 }])

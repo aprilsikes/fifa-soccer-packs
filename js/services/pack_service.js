@@ -7,11 +7,23 @@ app.factory('PackService', function ($http) {
         var array2 = players.data;
         var array = [];
         for (var i = 0; i < 12; i++) {
-          array.push(array2[Math.floor(Math.random() * (5 - 0 + 1)) + 0]);
+          array.push(array2[Math.floor(Math.random() * (50 - 0 + 1)) + 0]);
         }
         console.log(array);
         return array;
       })
-    }
+    },
+
+    // packValue: function () {
+    //   var total = 0;
+    //   this.all().then(function (results) {
+    //     console.log(results);
+    //     for (var i = 0; i < results.length; i++) {
+    //       total += (results[i].fifa_rating);
+    //     }
+    //   });
+    //   console.log(total);
+    //   return total;
+    // }
   }
 })
